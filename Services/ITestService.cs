@@ -5,9 +5,10 @@ using System.Threading.Tasks;
 
 namespace TestRazorPages.Services
 {
-    interface ITestService
+    public interface ITestService
     {
         string GetValue();
 
+        void UpdateValue();
     }
 }

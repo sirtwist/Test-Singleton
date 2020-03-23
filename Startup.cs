@@ -25,6 +25,7 @@ namespace TestRazorPages
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddSingleton<TestService>(new TestService());
+            services.AddHostedService<UpdateData>();
             services.AddRazorPages();
         }
 
